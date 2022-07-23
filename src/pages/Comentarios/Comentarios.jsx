@@ -1,8 +1,9 @@
 import Header from '../../Header/Header'
 import { FiTrash2, FiPlus } from 'react-icons/fi'
-
 import image from '../../assets/foto01.svg'
-import './comentarios.css'
+import './Comentarios.css'
+import React, { useEffect, useState } from "react";
+
 
 
 function Comentarios() {
@@ -15,7 +16,7 @@ function Comentarios() {
       }
     }
     const [list, setList] = useState(getLocalList)
-    const [newItem, setNewItem] = useState('')
+    const [newItem, setNewItem] = useState(' ')
   
     function handleCreateNewItem() {
       const item = {
